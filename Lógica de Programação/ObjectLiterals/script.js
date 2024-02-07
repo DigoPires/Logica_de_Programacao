@@ -102,3 +102,18 @@ const codigoPreenchido = codigo.padStart(5, "-");
 console.log(codigoPreenchido);
 
 
+// Split
+
+// Divide a string em uma array de palavras, usando espaços como separadores
+const texto = "Essa é uma string com espaços em branco"; 
+const palavras = texto.split(" ");
+console.log(palavras);
+
+// Divide a string em um array de números, usando vírgulas como separadores
+const numeros2 = "1,2,3,4,5".split("");
+console.log(numeros2);
+
+// Divide a string em um array de 3 elementos, usando espaços como separadores
+const partes = texto.split(" ", 3);
+console.log(partes);
+
