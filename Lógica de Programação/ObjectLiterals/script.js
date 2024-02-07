@@ -117,3 +117,57 @@ console.log(numeros2);
 const partes = texto.split(" ", 3);
 console.log(partes);
 
+
+// Join
+
+// Transforma o array em uma string, com traços como separador
+const numerosJoin = [1, 2, 3, 4, 5];
+console.log(numerosJoin.join(" - "));
+
+// Transforma os elementos de um array em string e acrescenta um elemento de string
+const frutas = ["maça", "banana", "laranja"]
+const textoFrutas = frutas.join(" e ");
+console.log(textoFrutas);
+
+
+// Repeat
+
+// Repetindo a string 3 vezes
+const  testandoRepeat = "Olá";
+const textoRepetido = testandoRepeat.repeat(3);
+console.log(textoRepetido)
+
+
+// Rest Operator
+function minhaFuncao(a, b, ...args){
+    console.log(a);
+    console.log(b);
+    console.log(args);
+}
+
+minhaFuncao(1, 2, 3, 4, 5);
+
+
+// Iterando sobre um array
+const frutasA = ["maça", "uva", "melância"];
+
+for(const fruta of frutasA){
+    console.log(fruta)
+}
+
+
+// Desestruturando Objetos
+const usuario = {
+    primeiroNome: "José",
+    sobrenome: "Xavier",
+    profissao: "Pedreiro"
+}
+
+const[primeiroNome, sobrenome, profissao] = Object.values(usuario);
+console.log(primeiroNome, sobrenome, profissao);
+
+
+// Desestruturando Array
+const array = ["João", "Maria", "Pedro"];
+const[primeiro, segundo, terceiro] = array;
+console.log(primeiro, segundo);
